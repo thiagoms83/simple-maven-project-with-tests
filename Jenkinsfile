@@ -6,6 +6,7 @@ node ('master') {
        sh 'mvn -Dmaven.test.failure.ignore clean package'
        } else {
        bat 'mvn -Dmaven.test.failure.ignore clean package'
+       }
       }
    }
    stage('Results') {
